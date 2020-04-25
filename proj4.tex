@@ -1,0 +1,96 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2cm, top=3cm, text={17cm, 24cm}]{geometry}
+\usepackage{times}
+\usepackage[unicode]{hyperref}
+
+\begin{document}
+
+
+\begin{titlepage}
+\begin{center}
+
+\huge
+{FAKULTA INFORMAČNÍCH TECHNOLOGÍ\\[0.4em]
+VYSOKÉ UČENÍ TECHNICKÉ V BRNĚ}\\
+\vspace{\stretch{0.382}}
+\LARGE
+{Typografie a publikování \,--\, 4. projekt \\[0.3em] 
+\textbf{\huge{Bibliografické citace}}}
+\vspace{\stretch{0.618}}
+
+{\LARGE \today \hfill 
+{Matej Mištík }}
+
+\end{center}
+\end{titlepage}
+
+	\section{Systém \LaTeX}
+	
+	\subsection{Pro koho je latex}
+	Je vybraný pro zkušené  uživatele, kteří potřebují publikace světové úrovni ,víc v~knize \cite{Knuth1990}, ale aj pro laiky použitím online \LaTeX\ editoru, například \cite{Simecek2013}.Hlavními výhodami vůči ostatním editorům jsou tedy 
+		\begin{enumerate}
+		\item GUI editoru googlu,
+		\item vykreslování výsledku do okna prohlížeče přes obrazové soubory,
+		\item zadávání parametrů pro překlad,
+		\item kooperace více lidí.
+	\end{enumerate}
+	Podrobnější informace o východech lze dočíst v~\cite{Sokol2012}.
+
+	
+	\subsection{Historie}
+	Autorem je Donald Ervin Knuth a vytvořil \TeX\ proto, aby mohl své odborné texty publikovat v odpovídající kvalitě. Protože sazeči pracující v tiskárně bez matematického vzdělání, tvořili moc chyb při sázení vzorců.
+    \TeX\ poskytuje mechanismus pro definici nových příkazů. Proto byla vytvořena
+    celá řada nadstaveb, které usnadnily práci s velice složitým jazykem. jednou z nejznámějších je \LaTeX\ .Více zjistíte na \cite{Pysny2009}.
+    Aby smě předšili historii, tak musíme vyslovovat slovo \TeX\ správné, a~to následovně "tek", víc o historii slova se dozvíte zde \cite{Slantchev}
+    
+    
+    \subsection{Složení dokumentu}
+    
+    Každí \TeX dokument se skládá z preambuli a těla dokumentu.Více o těchto částech se dočtete v knize Guide to \LaTeX\ \cite{Kopka2004}.
+    
+    \subsection{Začátky a první dokument}
+    Mohlo by se zdát že, \LaTeX\ je nemožné pře smrtelníka se naučit.Tak tvrdí článek Veselého, vysvětlení jak na to najdeme v článku. \cite{Vesely1991}
+    
+    
+    \subsubsection{Titulní strana}
+    \verb|\maketitle| je příkaz pro vytvoření titulní stránky - tam je název, autor atd.. V případě volby notitlepage v~\verb|\documentclass| (implicitní pro třídu article) je tato \uv{strana} umístěna v~dokumentu v~horní části stránky na níž pak normálně pokračuje další text a pro tuto stránku je použit styl plain (\verb|\thispagestyle{plain}|).\\ Další možnosti najdeme zde \cite{Sopouch2001}.
+    
+    
+    \subsection{Nové symboly STIX MATH}
+    
+    V novém se podařilo najít zkombinováním symbolů dalších 2000 matematických symbolů. víc v článku \cite{GratzerG2015}
+    
+    \section{Matematika}
+    
+    \subsection{Matematika dětí}
+    
+    Dle výzkumu 578 prváků, počítaní doma s rodiči výrazně zvyšuje jejich úspěšnost v skole. víc v \cite{BerkowitzTalia2015}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+    
+    
+	
+
+	
+	
+	
+	\newpage
+	\bibliographystyle{czechiso}
+	\renewcommand{\refname}{Použitá Literatura}
+	\bibliography{proj4}
+
+
+\end{document}
